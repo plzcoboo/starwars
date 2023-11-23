@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const NavItem = ({item, arr}) => {
-    const {thumUrl,id} = item;
+const NavItem = ({item,dataName,conChange}) => {
+    const {thumUrl,id,isOn} = item;
     return (
-        <li>
+        <li onClick={()=>conChange(item , dataName, id)} className={isOn ? 'on' : ''}>
             <img src={thumUrl} alt="" />
-            <p>{arr[id]}</p>
+            <p>{dataName[id]}</p>
         </li>
     );
 };
