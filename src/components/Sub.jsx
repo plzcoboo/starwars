@@ -6,7 +6,6 @@ import './sub.scss'
 import { useEffect, useState } from "react";
 
 const Sub = () => {
-    
     const [cnt , setCnt] = useState(0)
     const [peoplesInfo , setInfo] = useState(peopleImg)
     const [data , setPeoples] = useState(Peoples.results)
@@ -15,6 +14,7 @@ const Sub = () => {
     let height = [] 
     let birthYear = []
     let gender = []
+    let time = ""
     data.map(item => height.push(item.height))
     data.map(item => birthYear.push(item.birth_year))
     data.map(item => gender.push(item.gender))
