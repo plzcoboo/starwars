@@ -4,8 +4,7 @@ import "./Header.scss"
 const Header = () => {
     return (
         <header className='header'>
-            <h1><a href=""><img src="./images/sw_logo.jpg" alt="" /></a></h1>
-            
+            <h1><a href=""><img src="./images/sw_logo.jpg" alt="" /></a></h1>    
         </header>
     );
 };
