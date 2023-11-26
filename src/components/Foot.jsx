@@ -9,6 +9,7 @@ const Foot = () => {
             {/* <li><a href="#"><span>: github.com/plzcoboo</span></a></li> */}
             {/* <li><a href="#"><span>: plzcoboo@gmail.com</span></a></li> */}
             {/* <li><a href="#"><span>: plzcobooo.notion.site</span></a></li> */}
+            {/* <li><a href="#"><span>: plzcobooo.notion.site</span></a></li> */}
             </ul>
         </footer>
     );
