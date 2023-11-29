@@ -1,6 +1,6 @@
 import React from 'react';
 import NavItem from './NavItem';
-import './NavSlider.scss'
+import './scss/NavSlider.scss'
 
 const NavSlider = ({peoplesInfo ,data,conChange,next,prev}) => {
     let dataName = [] 

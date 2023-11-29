@@ -1,5 +1,5 @@
 import React from 'react';
-import './foot.scss'
+import './scss/foot.scss'
 
 const Foot = () => {
     return (

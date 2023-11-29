@@ -2,13 +2,15 @@ import NavSlider from "./NavSlider";
 import PeopleCon from "./PeopleCon";
 import peopleImg from "../assets/api/peoples";
 import Peoples from "../assets/api/people.json"
-import './sub.scss'
+import galleryNav from "../assets/api/gallery";
+import './scss/sub.scss'
 import { useEffect, useState } from "react";
 
 const Sub = () => {
     const [cnt , setCnt] = useState(0)
     const [peoplesInfo , setInfo] = useState(peopleImg)
     const [data , setPeoples] = useState(Peoples.results)
+    const [galleryNavItem , setGalleryNavItem] = useState(galleryNav)
     const [conData, setConData] = useState({...peoplesInfo[0],name:"Luke Skywalker"})
     let ConName =[]
     let height = [] 
@@ -19,6 +21,8 @@ const Sub = () => {
     data.map(item => birthYear.push(item.birth_year))
     data.map(item => gender.push(item.gender))
     data.map(item => ConName.push(item.name))
+
+    console.log(galleryNav)
 
 
     const conChange = (item,dataName,id) => {
@@ -41,11 +45,15 @@ const Sub = () => {
         setInfo(peopleImg.map(item => item.id === cnt ? {...item , isOn:true}:{...item , isOn:false}))
     },[cnt])
 
+    useEffect(()=>{
+
+    })
+
     return (
         <div className='inner'>
             <div className="con-box">
             <NavSlider peoplesInfo = {peoplesInfo} data ={data} conChange={conChange} next={next} prev={prev}/>
-            <PeopleCon peoplesInfo = {peoplesInfo} data ={data} conData={conData} height={height} birthYear={birthYear} gender={gender}/>
+            <PeopleCon peoplesInfo = {peoplesInfo} data ={data} conData={conData} height={height} birthYear={birthYear} gender={gender} galleryNavItem={galleryNavItem}/>
             </div>
         </div>
     );
