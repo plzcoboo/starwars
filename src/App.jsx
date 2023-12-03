@@ -1,10 +1,10 @@
-import Foot from './components/Foot';
-import Header from './components/Header';
-import Sub from './components/Sub';
+import Foot from "./components/Foot/Foot";
+import Header from "./components/Header/Header";
+import Sub from "./components/Sub/Sub";
 
 const App = () => {
   return (
-    <div className='wrap'>
+    <div style={{background:"#11171a"}}>
       <Header />
       <Sub/>
       <Foot/> 
