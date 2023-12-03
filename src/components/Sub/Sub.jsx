@@ -19,13 +19,15 @@ const Sub = () => {
 
     const SubMenuChange = (e) => {
         const character = e.target.textContent
+        if(character === subMenu) return
         setSubMenu(character)
         if(character === 'All character'){setMainData(mainData)}else{setMainData(mainData.filter(item=>item.category === character))}
     }
 
-    const galleryChange = (id) => {
+    const galleryChange = (id,idx) => {
         setGallery(mainData.find(item => item.id === id))
         setMainData(proFileData.map(item => item.id === id ? {...item, isShow:true} : {...item, isShow:false}))
+        setCnt(idx)
     }
 
     const galleryNavClick = (item) => {
@@ -40,19 +42,21 @@ const Sub = () => {
     }
 
     useEffect(()=>{
-        setGallery(proFileData[cnt])
-        setMainData(proFileData.map(item => item.actor === proFileData[cnt].actor ? {...item,isShow:true}: {...item, isShow:false}))
-    },[cnt])
-
-    useEffect(()=>{
+       setCnt(0)
        setGallery(proFileData[0])
        if(subMenu === 'Sub character') { setMainData(proFileData.map(item => item.actor === 'Yoda' ? {...item , isShow:true} : item))}
+       if(subMenu === 'All character') { setMainData(proFileData.map(item => item.actor === 'Luke Skywalker' ? {...item , isShow:true} : item))}
+       if(subMenu === 'Main character') { setMainData(proFileData.map(item => item.actor === 'Luke Skywalker' ? {...item , isShow:true} : item))}
     },[subMenu])
 
     useEffect(()=>{
         setCategory('Profile')
     },[proFileData])
 
+    useEffect(()=>{
+        setGallery(proFileData[cnt])
+        setMainData(proFileData.map(item => item.actor === proFileData[cnt].actor ? {...item, isShow:true} : {...item, isShow:false}))
+    },[cnt])
 
 
     return (
