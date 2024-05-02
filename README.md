@@ -1,6 +1,6 @@
-![readme_mockup2]()
+![readme_mockup2](<img src="./public/readme/All_readme.gif">)
 
-- 배포 URL : https://ohmycode-readme.netlify.app
+- 배포 URL : https://plzcoboo.github.io/starwars/dist
   
 <br>
 
