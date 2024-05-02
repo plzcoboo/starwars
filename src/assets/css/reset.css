@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	background: #000;
 	line-height: 1.6;
     font-size:15px;    
     font-family: 'Noto Sans KR', sans-serif;
