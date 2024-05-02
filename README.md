@@ -1,4 +1,11 @@
-![readme_mockup2](<img src="./public/readme/All_readme.gif">)
+### [초기화면]
+- 접속시 갤러리 형식 화면이 나타납니다.
+
+| 초기화면 |
+|----------|
+<img src="./public/readme/first.jpg">
+
+
 
 - 배포 URL : https://plzcoboo.github.io/starwars/dist
   
@@ -138,10 +145,5 @@
 <img src="./public/readme/Gallery_readme.gif">
 
 
-### [초기화면]
-- 접속시 갤러리 형식 화면이 나타납니다.
 
-| 초기화면 |
-|----------|
-|![splash](<img src="./public/readme/All_readme.gif">)|
 
