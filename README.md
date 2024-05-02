@@ -11,7 +11,7 @@
 
 - 평소 좋아하는 테마를 정해 REACT 를 이용하여 이미지 갤러리를 만들었습니다.
 
-## 1. 개발 환경
+## 개발 환경
 
 - Front : HTML, React, styled-components
 - Back-end : 로컬 API 사용
@@ -38,7 +38,7 @@
 3. HTML  / CSS Module / 순수 React 사용
 
 
-## 3. 프로젝트 구조
+## 프로젝트 구조
 
 ```
 📦src
