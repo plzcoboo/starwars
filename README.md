@@ -5,11 +5,7 @@
 |----------|
 <img src="./public/readme/first.jpg">
 
-
-
 - 배포 URL : https://plzcoboo.github.io/starwars/dist
-  
-<br>
 
 ## 프로젝트 소개
 
@@ -21,7 +17,7 @@
 - Back-end : 로컬 API 사용
 - 버전 및 이슈관리 : Github
 - 서비스 배포 환경 : github pages
-<br>
+
 
 ### React, styled-component
 
@@ -31,7 +27,7 @@
 - styled-component
     - props를 이용한 조건부 스타일링을 활용하여 상황에 알맞은 스타일을 적용시킬 수 있었습니다.
     - 빌드될 때 고유한 클래스 이름이 부여되어 네이밍 컨벤션을 정하는 비용을 절약할 수 있었습니다.
-<br>
+
 
 ## 3. 프로젝트 구조
 
@@ -98,13 +94,9 @@
  ┗ 📜main.jsx
 ```
 
-<br>
-
 ### 개발 기간
 
 - 2일~3일 소요
-
-<br>
 
 ## 기능
 
