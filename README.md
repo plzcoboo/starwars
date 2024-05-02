@@ -5,7 +5,7 @@
 |----------|
 <img src="./public/readme/first.jpg">
 
-- 배포 URL : https://plzcoboo.github.io/starwars/dist
+- 배포 URL : https://aquamarine-lily-2fe788.netlify.app
 
 ## 프로젝트 소개
 
