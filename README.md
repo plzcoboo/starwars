@@ -16,7 +16,7 @@
 - Front : HTML, React, styled-components
 - Back-end : 로컬 API 사용
 - 버전 및 이슈관리 : Github
-- 서비스 배포 환경 : github pages
+- 서비스 배포 환경 : Netlify
 
 
 ## React, styled-component
