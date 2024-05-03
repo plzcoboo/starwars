@@ -19,7 +19,7 @@
 - 서비스 배포 환경 : Netlify
 
 
-## React, styled-component
+## React, CSS Module
 
 - React
     - 로컬 API를 통해 자바스크립트 메서드를 통해 화면에 출력하는 연습을 하기 좋았습니다.
